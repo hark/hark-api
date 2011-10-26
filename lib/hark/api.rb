@@ -5,7 +5,6 @@ module Hark
     def initialize(config = {})
       @config = config
       @token = config[:token]
-      # :headers
     end
 
     if Hark.env.production?
