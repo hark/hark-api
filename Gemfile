@@ -5,3 +5,10 @@ gemspec
 
 gem 'httparty'
 gem 'activesupport'
+
+group :development, :test do
+  gem 'mocha'
+  gem 'rdoc'
+  gem 'yard'
+  gem 'rdiscount'
+end

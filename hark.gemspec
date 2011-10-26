@@ -23,4 +23,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "httparty"
   s.add_runtime_dependency "activesupport"
   s.add_development_dependency "mocha"
+  s.add_development_dependency "rdoc"
+  s.add_development_dependency "yard"
+  s.add_development_dependency "rdiscount"
 end

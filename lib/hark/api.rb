@@ -35,9 +35,9 @@ module Hark
       # Call this method to configure the library at runtime.
       #
       # @example
-      # Hark::API.configure do |config|
-      #   config.api_key = '1234567890abcdef'
-      # end
+      #   Hark::API.configure do |config|
+      #     config.api_key = '1234567890abcdef'
+      #   end
       def configure
         yield(configuration)
         @api ||= API.new(configuration)
