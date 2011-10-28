@@ -1,10 +1,25 @@
-%W{ pp test/unit mocha shoulda-context }.each do |g|
+%W{
+  pp
+  test/unit
+  mocha
+  shoulda-context
+  vcr
+  json/pure
+  active_support/hash_with_indifferent_access
+}.each do |g|
   begin
     require g
   rescue LoadError
     require 'rubygems'
     require g
   end
+end
+
+require 'json/pure'
+
+VCR.config do |c|
+  c.cassette_library_dir = 'test/fixtures/vcr_cassettes'
+  c.stub_with :webmock
 end
 
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'hark'))

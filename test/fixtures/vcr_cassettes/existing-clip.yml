@@ -1,0 +1,55 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://api.hark.com:443/1.0/clips/jxxcfhxywx.json
+    body: 
+    headers: 
+      x-harktoken: 
+      - an-api-key
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge,chrome=1
+      etag: 
+      - "\"e699d0aaa3334eedecb6a2732239280f\""
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      content-type: 
+      - application/json; charset=utf-8
+      x-rack-cache: 
+      - miss
+      server: 
+      - Apache/2.2.3 (CentOS)
+      date: 
+      - Fri, 28 Oct 2011 05:46:00 GMT
+      x-runtime: 
+      - "0.072499"
+      cache-control: 
+      - max-age=0, private, must-revalidate
+      vary: 
+      - Host,X-Forwarded-Proto
+      status: 
+      - "200"
+      transfer-encoding: 
+      - chunked
+    body: |-
+      {
+        "pid": "jxxcfhxywx",
+        "name": "I have a dream today",
+        "duration": 2,
+        "short_url": "http://bit.ly/fPKQmO",
+        "canonical_url": "http://hark.com/clips/jxxcfhxywx-i-have-a-dream-today",
+        "version": "1.0.1",
+        "audio_url": "http://audio1.hark.com/002BB7/production/audio/000/000/001/1.mp3?Expires=1319784360&Signature=ecFLDwVqaWqTD~KFpbCtjSgof1icL5IklpN1lt~DjUOZO0thGGUmTdUS4UcLwxcdYGIi0bBZDpVh7kM6CFhbWFKm5m~X4i5Y-ffPu9Mhc~ENa-O6-zQbVy5bSc2H4-L8XMn8uElUPKkxXHsN2Th9Up4dP~H5Lb4GKMrqQaAg~UA_&Key-Pair-Id=APKAJQKB5APWST65Q4AQ",
+        "what": "clip",
+        "quote": "\"I have a dream today!\"",
+        "description": "Martin Luther King Jr. gives his I Have a Dream Speech.",
+        "image_urls": [
+          "http://cdn2.hark.com/images/000/000/224/224/martin-luther-king-jr_large.jpg"
+        ]
+      }
+    http_version: "1.1"

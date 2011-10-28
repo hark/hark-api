@@ -7,8 +7,8 @@ task :default => :test
 
 desc 'Test the hark gem'
 Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.pattern = 'test/**/*_test.rb'
+  t.libs << ['lib', 'test']
+  t.pattern = 'test/**/test_*.rb'
   t.verbose = true
 end
 

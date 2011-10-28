@@ -1,0 +1,48 @@
+PATH
+  remote: .
+  specs:
+    hark (0.0.1)
+      activesupport
+      httparty
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.1.1)
+      multi_json (~> 1.0)
+    addressable (2.2.6)
+    crack (0.3.1)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    json (1.6.1)
+    metaclass (0.0.1)
+    mocha (0.10.0)
+      metaclass (~> 0.0.1)
+    multi_json (1.0.3)
+    multi_xml (0.4.1)
+    rdiscount (1.6.8)
+    rdoc (3.11)
+      json (~> 1.4)
+    shoulda (2.11.3)
+    vcr (1.11.3)
+    webmock (1.7.7)
+      addressable (~> 2.2, > 2.2.5)
+      crack (>= 0.1.7)
+    yard (0.7.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  hark!
+  httparty
+  json
+  mocha
+  rdiscount
+  rdoc
+  shoulda
+  vcr
+  webmock
+  yard

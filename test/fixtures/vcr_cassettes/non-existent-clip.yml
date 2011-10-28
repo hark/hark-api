@@ -1,0 +1,44 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://api.hark.com:443/1.0/clips/foo.json
+    body: 
+    headers: 
+      x-harktoken: 
+      - an-api-key
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 404
+      message: Not Found
+    headers: 
+      x-ua-compatible: 
+      - IE=Edge,chrome=1
+      x-powered-by: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.2
+      content-type: 
+      - application/json; charset=utf-8
+      x-rack-cache: 
+      - miss
+      server: 
+      - Apache/2.2.3 (CentOS)
+      date: 
+      - Fri, 28 Oct 2011 05:33:00 GMT
+      x-runtime: 
+      - "1.052981"
+      cache-control: 
+      - no-cache
+      vary: 
+      - Host,X-Forwarded-Proto
+      status: 
+      - "404"
+      transfer-encoding: 
+      - chunked
+    body: |-
+      {
+        "pid": "foo",
+        "what": "clip",
+        "message": "Not Found",
+        "status": 404
+      }
+    http_version: "1.1"

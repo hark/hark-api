@@ -1,7 +1,8 @@
 require "rubygems"
 require "bundler/setup"
-require "active_support"
 require "httparty"
+require "active_support"
+require "active_support/core_ext/object/blank"
 
 module Hark
 

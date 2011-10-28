@@ -3,10 +3,6 @@ module Hark
 
     include ::HTTParty
 
-    def initialize(config)
-      @api_key = config.api_key
-    end
-
     if Hark.env.production?
       base_uri 'https://api.hark.com/1.0'
     else
@@ -23,7 +19,7 @@ module Hark
     # Default options passed back to in a HTTParty call.
     # @return [Hash] Returns hash of options for a HTTParty call.
     def options
-      { :headers => { 'X-HarkToken' => @api_key } }
+      { :headers => { 'X-HarkToken' => self.class.configuration.api_key } }
     end
 
     class << self
@@ -40,7 +36,7 @@ module Hark
       #   end
       def configure
         yield(configuration)
-        @api ||= API.new(configuration)
+        @api ||= API.new
       end
 
       # The configuration object.
@@ -52,6 +48,7 @@ module Hark
       # The api object.
       # @see Hark::API
       def api
+        raise ArgumentError if configuration.api_key.blank?
         @api
       end
 
