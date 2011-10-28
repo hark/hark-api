@@ -16,4 +16,44 @@ class TestHarkAPI < Test::Unit::TestCase
 
   end
 
+  context "getting clips" do
+
+    should "fail getting a clip and having a bad api key"
+
+    should "fail getting a clip for a non-existent clip id"
+
+    should "get a clip"
+
+  end
+
+  context "searching for clips" do
+
+    should "fail getting searching for clips and having a bad api key"
+
+    should "get a result with zero clips"
+
+    should "get a result with many clips"
+
+  end
+
+  context "getting collections" do
+
+    should "fail getting a collection and having a bad api key"
+
+    should "fail getting a collection for a non-existent collection id"
+
+    should "get a collection"
+
+  end
+
+  context "searching for collections" do
+
+    should "fail getting searching for collections and having a bad api key"
+
+    should "get a result with zero collections"
+
+    should "get a result with many collections"
+
+  end
+
 end
