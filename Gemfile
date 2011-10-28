@@ -8,6 +8,7 @@ gem 'activesupport'
 
 group :development, :test do
   gem 'mocha'
+  gem 'shoulda'
   gem 'rdoc'
   gem 'yard'
   gem 'rdiscount'

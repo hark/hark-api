@@ -1,4 +1,4 @@
-%W{ pp test/unit mocha }.each do |g|
+%W{ pp test/unit mocha shoulda-context }.each do |g|
   begin
     require g
   rescue LoadError
