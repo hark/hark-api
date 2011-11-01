@@ -3,6 +3,7 @@ source "http://rubygems.org"
 # Specify your gem's dependencies in hark-api.gemspec
 gemspec
 
+gem 'rake'
 gem 'httparty'
 gem 'activesupport'
 
