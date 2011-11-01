@@ -2,7 +2,7 @@
   pp
   test/unit
   mocha
-  shoulda-context
+  shoulda
   vcr
   json/pure
   active_support/hash_with_indifferent_access

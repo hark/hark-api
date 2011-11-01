@@ -9,7 +9,7 @@ desc 'Test the hark gem'
 Rake::TestTask.new(:test) do |t|
   t.libs << ['lib', 'test']
   t.pattern = 'test/**/test_*.rb'
-  t.verbose = true
+  t.options = ["--verbose=verbose"] # (s[ilent], p[rogress], n[ormal], v[erbose])
 end
 
 desc "Generate documentation for the hark gem"
