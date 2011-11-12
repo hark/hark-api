@@ -16,6 +16,16 @@ module Hark
       self.class.get("/clips/#{clip_id}.json", options)
     end
 
+    # Queries the API for the search term
+    # @param [String] search_term The clip identifier
+    # @return [String] Returns a JSON array of clips
+    def search(search_term)
+      search_options = options
+      search_options[:query] = { 'keywords' => search_term }
+      puts search_options
+      self.class.get("/clips/search.json", search_options)
+    end
+
     # Default options passed back to in a HTTParty call.
     # @return [Hash] Returns hash of options for a HTTParty call.
     def options
@@ -58,6 +68,11 @@ module Hark
         api.clip(clip_id)
       end
 
+      # Queries the API for the search term
+      # @see Hark::API#search
+      def search(search_term)
+        api.search(search_term)
+      end
     end
   end
 end
