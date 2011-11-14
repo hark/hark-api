@@ -283,6 +283,14 @@ curl -H "X-HarkToken: a-token" "https://api.hark.com/1.0/collections/search?keyw
 ```
 
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! The Ruby implementation is a work in progress.  The interface will likely  !!
+!! change as well as be expanded upon.                                        !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 Ruby Examples
 -------------
 
